@@ -1,0 +1,377 @@
+/**                    Mobile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+}
+ .navbarlinks {
+     display: flex;
+     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1px;
+ }
+ .navbarlinks li {
+     flex-direction: row;
+     align-items: center;
+     
+ }
+ .navbarlinks li a {
+  flex-wrap: wrap;
+     flex-direction: row;
+     align-items: center;
+     font-size: 15px;
+ }
+ .logo {
+     display: block;
+     flex-direction: row;
+     align-items: center;
+     font-size: small;
+ }
+ .logo a {
+     display: block;
+     flex-direction: row;
+     align-items: center;
+     font-size: 1.2rem;
+ }
+  
+.about,
+.home {
+    height: 50vh;
+}
+
+.about-content h1,
+ .home-content h1{
+     font-size: 1.2rem;
+     margin-bottom: 10px;
+     display: flex;
+ }
+ .home-content h3{
+     font-size: 0.6rem;
+     margin-bottom: 10px;
+     display: flex;
+ }
+ 
+.about-img img,
+ .home-img img{
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+    flex-direction: row;
+ }
+ .home-content a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #8549d4;
+    font-size: 0.5rem;
+    transition: all 0.5s ease;
+    animation: softGlow 3s infinite ease-in-out;
+}
+
+.about-content p {
+    font-size: 0.6rem;
+    line-height: 1.2;
+}
+
+.education-main-container p{
+    font-size: 0.6rem;
+    line-height: 1.2;
+    max-width: 200px;
+}
+
+.education-img img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+
+[class*='col-'] {
+    width: 100%;
+}
+
+/*                    tablet                     */
+/* if(screen && min-width: 700px){} */
+@media screen and (min-width: 700px) {
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+    .navbarlinks {
+        display: flex;
+        flex-direction: row;
+    }
+    .navbarlinks li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .navbarlinks li a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+.logo a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.home,
+.about {
+    height: 100vh;
+    width: 100%;
+  
+}
+.about-content h1,
+.home-content h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.home-content h1 span{
+    color: #8549d4;
+    font-size: 35px;
+}
+.home-content h3{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.about-img img,
+.home-img img{
+    max-width: 250px;
+    max-height: 250px;
+}
+.home-content a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #8549d4;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+    animation: softGlow 3s infinite ease-in-out;
+}
+.about-content p{
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+    margin-bottom: 6px;
+}
+.skills-main-container {
+    display: flex;
+    flex-direction: row;
+
+}
+.radial-bars {
+    display: flex;
+    /* ده اللي بيخليهم ييجوا جنب بعض */
+
+    /* عشان لو الشاشة صغرت ينزلوا تحت بعض وما يبوظوش التصميم */
+    justify-content: center;
+    /* بيخلي الدوائر في نص الشاشة */
+    gap: 50px;
+    /* المسافة بين كل دائرة والتانية */
+    margin-top: 20px;
+}
+
+    .education-main-container p{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-bottom: 100px;
+    max-width: 400px;
+}
+.education-img img{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+    .col-md-1 {
+        width: 8.33%;
+    }
+    .col-md-2 {
+        width: 16.66%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.33%;
+    }
+
+    .col-md-5 {
+        width: 41.66%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.33%;
+    }
+
+    .col-md-8 {
+        width: 66.66%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.33%;
+    }
+
+    .col-md-11 {
+        width: 91.66%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+        .navbarlinks {
+            display: flex;
+            flex-direction: row;
+        }
+}
+
+/**                    disktop */
+/* if(screen && min-width: 900px){} */
+@media screen and (min-width: 900px) {
+
+.about-content h1,
+.home-content h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.home-content h1 span{
+    color: #8549d4;
+    font-size: 4rem;
+}
+.home-content h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.about-img img,
+.home-img img{
+    max-width: 400px;
+    max-height: 400px
+}
+.home-content a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #8549d4;
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+    animation: softGlow 3s infinite ease-in-out;
+}
+.about-content p{
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+    margin-bottom: 6.5px;
+}
+.radial-bars {
+    display: flex;
+    /* ده اللي بيخليهم ييجوا جنب بعض */
+
+    /* عشان لو الشاشة صغرت ينزلوا تحت بعض وما يبوظوش التصميم */
+    justify-content: center;
+    /* بيخلي الدوائر في نص الشاشة */
+    gap: 80px;
+    /* المسافة بين كل دائرة والتانية */
+    margin-top: 20px;
+}
+ .education-main-container p{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 150px;
+    max-width: 750px;
+ }
+.education-img img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 60px;
+    margin-left: 150px;
+}
+.contact li{
+    font-size: 30px;
+}
+
+    .col-lg-1 {
+        width: 8.33%;
+    }
+
+    .col-lg-2 {
+        width: 16.66%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        width: 33.33%;
+    }
+
+    .col-lg-5 {
+        width: 41.66%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        width: 58.33%;
+    }
+
+    .col-lg-8 {
+        width: 66.66%;
+    }
+
+    .col-lg-9 {
+        width: 75%;
+    }
+
+    .col-lg-10 {
+        width: 83.33%;
+    }
+
+    .col-lg-11 {
+        width: 91.66%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+}
