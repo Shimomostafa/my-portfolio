@@ -106,7 +106,7 @@ transform: scale(1.5) !important;
 
 .home-content{
     margin: 50px;
-    padding: 20px;
+    padding: 5px;
     align-items: center;
  
 }
@@ -209,7 +209,6 @@ transform: scale(1.5) !important;
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    border: 3px solid #8549d4;
     margin-bottom: 10px;
     position: relative;
     object-fit: cover ;
@@ -220,7 +219,6 @@ transform: scale(1.5) !important;
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    border: 3px solid #8549d4;
     margin-bottom: 10px;
     position: relative;
     object-fit: cover;

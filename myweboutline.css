@@ -14,7 +14,7 @@
  .navbarlinks {
      display: flex;
      flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 1px;
  }
  .navbarlinks li {
@@ -26,7 +26,7 @@
   flex-wrap: wrap;
      flex-direction: row;
      align-items: center;
-     font-size: 15px;
+     font-size: 10px;
  }
  .logo {
      display: block;
@@ -48,30 +48,30 @@
 
 .about-content h1,
  .home-content h1{
-     font-size: 1.2rem;
+     font-size: 15px;
      margin-bottom: 10px;
      display: flex;
  }
  .home-content h3{
-     font-size: 0.6rem;
+     font-size: 10px;
      margin-bottom: 10px;
      display: flex;
  }
  
 .about-img img,
  .home-img img{
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 110px;
+    max-height: 110px;
     display: block;
     flex-direction: row;
  }
  .home-content a{
     text-decoration: none;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 7px 7px;
     border-radius: 20px;
     background-color: #8549d4;
-    font-size: 0.5rem;
+    font-size: 8px;
     transition: all 0.5s ease;
     animation: softGlow 3s infinite ease-in-out;
 }
@@ -79,6 +79,11 @@
 .about-content p {
     font-size: 0.6rem;
     line-height: 1.2;
+}
+.radial-bars {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .education-main-container p{
